@@ -42,3 +42,6 @@ In this part we will get all the necessary functions and parameters (implemented
 * Hl: the Hessian of the Lagrangian at xy
 
 These parameters are returned by the function *chs.m* using the initila inputs from *ch.m*.
+
+
+## Optimizer

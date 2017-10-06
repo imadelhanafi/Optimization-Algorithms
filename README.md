@@ -45,3 +45,11 @@ These parameters are returned by the function *chs.m* using the initila inputs f
 
 
 ## Optimizer
+
+
+Optimization algorithms are implemented in *sqp.m*
+
+### Newton Method
+
+### Generalized Newton Method (Sequential Quadratic Programming)
+

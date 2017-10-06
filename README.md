@@ -43,13 +43,34 @@ In this part we will get all the necessary functions and parameters (implemented
 
 These parameters are returned by the function *chs.m* using the initila inputs from *ch.m*.
 
-
 ## Optimizer
-
 
 Optimization algorithms are implemented in *sqp.m*
 
 ### Newton Method
 
-### Generalized Newton Method (Sequential Quadratic Programming)
+Let *f* be the function that we want to minimize and *c* the constraints.
 
+ ![equation](http://latex.codecogs.com/gif.latex?%24%24%20%28P%29%20%5Cleft%5C%7B%20%5Cbegin%7Barray%7D%7Brl%7D%20%5Ctext%7Bmin%7D%20%26%20f%28x%29%5C%5C%20c%28x%29%20%26%3D%200%20%5C%5C%20%5Cend%7Barray%7D%20%5Cright.%20%24%24) 
+ 
+ We want to find a primal-dual solution ![equation](http://latex.codecogs.com/gif.latex?%24%24%20%28x_*%2C%5Clambda_*%29%20%24%24) that satisfy the following optimality condition:
+ 
+ ![equation](http://latex.codecogs.com/gif.latex?%24%24%20%5Cleft%5C%7B%20%5Cbegin%7Barray%7D%7Brl%7D%20%5Cnabla%20f%28x_*%29&plus;c%27%28x_*%29%5ET%5Clambda_*%20%26%20%3D%200%5C%5C%20c%28x_*%29%20%26%3D%200%20%5C%5C%20%5Cend%7Barray%7D%20%5Cright.%20%24%24)
+ 
+Solving this problem is equivalent to find the zero of the following function by  setting ![equation](http://latex.codecogs.com/gif.latex?%24%24%20z%20%3D%20%28x%2C%5Clambda%29%20%24%24) :
+
+![equation](http://latex.codecogs.com/gif.latex?%24%24%20F%28z%29%3D%5Cbegin%7Bpmatrix%7D%20%5Cnabla%20f%28x%29&plus;c%27%28x%29%5ET%5Clambda%20%5C%5C%20c%28x%29%20%5Cend%7Bpmatrix%7D%20%24%24)
+
+To find zero z* of this function we will use Newton Algorithm and at iteration z_k we need to solve the following linear system (finding x_k and lambda_k)
+
+![equation](http://latex.codecogs.com/gif.latex?%24%24%20%5Cbegin%7Barray%7D%7Brl%7D%20%5Cbegin%7Bpmatrix%7D%20L_k%20%26%20A_k%5ET%20%5C%5C%20A_k%20%26%200%20%5C%5C%20%5Cend%7Bpmatrix%7D%20%5Cbegin%7Bpmatrix%7D%20d_k%5C%5C%20%5Clambda_k%5E%7BPQ%7D%20%5C%5C%20%5Cend%7Bpmatrix%7D%20%26%3D%20-%20%5Cbegin%7Bpmatrix%7D%20%5Cnabla%20f%28x_k%29%5C%5C%20c%28x_k%29%20%5Cend%7Bpmatrix%7D%20%5Cend%7Barray%7D%20%24%24) 
+with ![equation](http://latex.codecogs.com/gif.latex?%24L_k%3D%5Cnabla_%7Bxx%7Dl%28x_k%2C%5Clambda_k%29%24) the Hessian of the Lagrangian and ![equation](http://latex.codecogs.com/gif.latex?%24A_k%3Dc%27%28x_k%29%24 ).
+
+Then:
+
+![equation](http://latex.codecogs.com/gif.latex?%5C%5C%20%24x_%7Bk&plus;1%7D%3Dx_k&plus;d_k%24%24%5C%5C%20%24%5Clambda_%7Bk&plus;1%7D%3D%5Clambda_k%5E%7BPQ%7D%24)
+ 
+**Convergance**
+**Nature of the solution**
+
+### Generalized Newton Method (Sequential Quadratic Programming)

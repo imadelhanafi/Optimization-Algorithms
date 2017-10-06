@@ -29,3 +29,16 @@ The following figure represents a chain (black points are nodes):
 <p align="center">
   <img src="http://code2net.com/folder/node.png" width="400">
 </p>
+
+
+## Simulator
+
+In this part we will get all the necessary functions and parameters (implemented in **chs.m**) to apply the optimization algorithm:
+
+* e: the potential energy in the position xy
+* Ce: the value of constraints (length of bars) in the position xy. The Length of bars should be constant in every step
+* g: Gradiant of e at xy
+* Ae: Jacobian of contraints at xy
+* Hl: the Hessian of the Lagrangian at xy
+
+These parameters are returned by the function *chs.m* using the initila inputs from *ch.m*.

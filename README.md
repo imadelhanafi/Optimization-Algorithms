@@ -21,7 +21,7 @@ Inputs of this problems (defined in ch.m) are:
 * xy : position of the nodes
 * (a,b) : Position of end node, knowing that the other extremity is at (0,0)
 * Max-iteration : max iteration allowed in the optimization algorithms
-* Tolerance : Error tolerance allowed
+* Tolerance : Error tolerance
 * imode : choice of the optimization algorithms
 
 The following figure represents a chain (black points are nodes):

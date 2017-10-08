@@ -27,7 +27,7 @@ Inputs of this problems (defined in ch.m) are:
 The following figure represents a chain (black points are nodes):
 
 <p align="center">
-  <img src="http://code2net.com/folder/node.png" width="400">
+  <img src="http://code2net.com/folder/screenshots/node.png" width="400">
 </p>
 
 

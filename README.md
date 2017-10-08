@@ -70,7 +70,8 @@ Then:
 
 ![equation](http://latex.codecogs.com/gif.latex?%5C%5C%20%24x_%7Bk&plus;1%7D%3Dx_k&plus;d_k%24%24%5C%5C%20%24%5Clambda_%7Bk&plus;1%7D%3D%5Clambda_k%5E%7BPQ%7D%24)
  
-**Convergance**
+**Convergance** -
 **Nature of the solution**
 
 ### Generalized Newton Method (Sequential Quadratic Programming)
+

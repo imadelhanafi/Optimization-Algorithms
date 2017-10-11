@@ -99,7 +99,7 @@ We introduce the penalization function:
 ![equation](http://latex.codecogs.com/gif.latex?%24%5Ctheta_%7B%5Csigma%7D%28x%29%3Df%28x%29&plus;%5Csigma%20%5C%7C%20c%28x%29%20%5C%7C%20_1%24)
 
 We know that:
-![equation](http://latex.codecogs.com/gif.latex?%24%5Ctheta%27_%7B%5Csigma%7D%28x_k%2Cd_k%29%3D-d%5ETM_kd&plus;%28%5Clambda_k%5E%7BPQ%7D%29%5ETc_k-%5Csigma%20%5C%7C%20c%28x%29%20%5C%7C%20_1%24)
+![equation](http://latex.codecogs.com/gif.latex?%24%5Ctheta%27_%7B%5Csigma%7D%28x_k%2Cd_k%29%3D-d_k%5ETM_kd_k&plus;%28%5Clambda_k%5E%7BPQ%7D%29%5ETc_k-%5Csigma%20%5C%7C%20c%28x%29%20%5C%7C%20_1%24)
 
 Line search will be made on ![equation](http://latex.codecogs.com/gif.latex?%24%5Ctheta_%7B%5Csigma%7D%24)  and the goal now is to find alpha such that
 

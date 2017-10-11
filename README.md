@@ -75,3 +75,9 @@ Then:
 
 ### Generalized Newton Method (Sequential Quadratic Programming)
 
+
+The aim of this part is to modify the newton method so that it converges to a solution whatever the initial position.
+
+To solve this problem we will use a penalty function.
+
+Penalization is a concept that transforms an optimization problem with constraints into a sequence of optimization problems without constraint. The goal is to introduce a new function whose value is penalized when the constraints are not respected.

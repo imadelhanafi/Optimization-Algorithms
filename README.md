@@ -92,7 +92,7 @@ Such that  ![equation](http://latex.codecogs.com/gif.latex?%24%24%28d_k%2C%5Clam
 
 ![equation](http://latex.codecogs.com/gif.latex?%24%24%20%5Cleft%5C%7B%20%5Cbegin%7Barray%7D%7Brl%7D%20%5Ctext%7Bmin%7D_%7Bd%7D%20%5Cnabla%20f%28x_k%29%5ETd%20&plus;%20%5Cfrac%7B1%7D%7B2%7Dd%5ETH_kd%20%26%5C%5C%20c%28x_k%29&plus;c%27%28x_k%29d%20%26%3D%200%20%5C%5C%20%5Cend%7Barray%7D%20%5Cright.%20%24%24)
 
-Hk is the hessian of the lagrangian. To solve this problem in a raisonable time, the value of the hessian is modified slightly so that it becomes positive matrix. We thus use the Cholesky factorization, which makes it possible to find a matrix Mk defined positive close to Hk.
+Hk is the hessian of the lagrangian. To solve this problem in a reasonable time, the value of the hessian is modified slightly so that it becomes a positive matrix. We thus use the Cholesky factorization, which makes it possible to find a matrix Mk defined positive close to Hk.
 
 We introduce the penalization function:
 

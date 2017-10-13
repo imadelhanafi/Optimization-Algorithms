@@ -107,8 +107,8 @@ Line search will be made on ![equation](http://latex.codecogs.com/gif.latex?%24%
 ![equation](http://latex.codecogs.com/gif.latex?%24%24%20%5Ctheta_%7B%5Csigma%7D%28x_k&plus;%5Calpha_k%20x_k%29%20%5Cleq%20%5Ctheta_%7B%5Csigma%7D%28x_k%29%20&plus;%20%5Comega%20%5Calpha_k%20%5CDelta_k%20%24%24)  
 with ![equation](http://latex.codecogs.com/gif.latex?%24%5CDelta_k%3D-d_k%5ETM_kd_k%20&plus;%20%28%5Clambda_k%5E%7BPQ%7D%29%5ETc_k-%5Csigma%20%5C%7C%20c%28x%29%20%5C%7C%20_1%24.%5C%5C) and ω=0.0001.
 
-Cholesky decomposition is in: 
-Implementation of this method is in:
+Cholesky decomposition is in: *cholmod.m*
+Implementation of this method is in: *sqp.m*
 
 
 

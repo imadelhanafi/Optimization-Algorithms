@@ -12,7 +12,7 @@ This project is devided into two parts :
 * **Optimizer** - Implementation of optimization algorithms : Newton and Generalized Newton using SQP (Sequential Quadratic Programming).
 * **Simulator** - Calculate necessary parameters (from a real problem) that will be used as inputs in the optimizer.
 <p align="center">
-  <img src="http://code2net.com/folder/screenshots/struc.png" width="400">
+  <img src="http://code2net.com/folder/screenshots/struc.png" width="600">
 </p>
 ### Problem
 Our goal is to find the position of static equilibrium of a chain formed of rigid bars in a vertical plane.

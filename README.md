@@ -1,6 +1,17 @@
 
 # Optimization Algorithms
 
+---
+- This project : Generalized Newton Method
+
+- ISTA and FISTA on the LASSO Problem : [Here](https://github.com/imadelhanafi/OPTIMIZATION-Proximal-gradient-methods)
+
+- Cutting-plane algorithm & Bundle methods : [Here](https://github.com/imadelhanafi/OPTIMIZATION-Proximal-gradient-methods)
+
+- SGD, Avergade SGD and SAG/SAGA : [Here](To add)
+---
+
+
 In this project we want to solve numerically an optimization problem with constraints.
 
  ![equation](http://latex.codecogs.com/gif.latex?%24%24%20%28P_%7BE%7D%29%20%5Cleft%5C%7B%20%5Cbegin%7Barray%7D%7Brl%7D%20%5Ctext%7Bmin%7D%20%26%20e%28x%2Cy%29%5C%5C%20c_E%28x%2Cy%29%20%26%3D%200%20%5C%5C%20%5Cend%7Barray%7D%20%5Cright.%20%24%24) 
